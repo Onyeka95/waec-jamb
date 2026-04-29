@@ -68,7 +68,7 @@ export default function ForSchools() {
 
         <div className="text-center mt-12">
           <a 
-            href="https://wa.me/234YOURNUMBER?text=Hi%20Coach%2C%20I%27m%20a%20teacher%2Fschool%20owner%20and%20I%20want%20a%20demo"
+            href="https://wa.me/2348069036428?text=Hi%20Coach%2C%20I%27m%20a%20teacher%2Fschool%20owner%20and%20I%20want%20a%20demo"
             target="_blank"
             className="inline-flex items-center gap-3 bg-[#128C7E] text-white px-10 py-4 rounded-3xl font-semibold hover:bg-[#25D366] transition-all"
           >

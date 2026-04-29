@@ -35,14 +35,14 @@ export default function Hero({ whatsappLink }: { whatsappLink: string }) {
             </div>
             <div className="h-12 w-px bg-gray-200" />
             <div>
-              <p className="font-bold text-3xl text-[#25D366]">70%+</p>
+              <p className="font-bold text-3xl text-[#25D366]">Target: 70%+</p>
               <p className="text-gray-500">quiz completion</p>
             </div>
             <div className="h-12 w-px bg-gray-200" />
             <div className="flex items-center gap-2">
               <Flame className="w-8 h-8 text-orange-500" />
               <div>
-                <p className="font-bold">4-day avg streak</p>
+                <p className="font-bold">Goal: 4-day avg streak</p>
               </div>
             </div>
           </div>
