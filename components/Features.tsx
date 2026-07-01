@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 
 export default function Features() {
   return (
-    <section id="features" className="bg-[#25D366] text-white py-20">
+    <section id="features" className="bg-[#195682] text-white py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div

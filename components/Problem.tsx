@@ -21,19 +21,19 @@ export default function Problem() {
               icon: "💰",
               title: "Expensive Tutorials",
               desc: "₦30,000 – ₦100,000 per subject excludes millions of low-income students",
-              image: "https://media.istockphoto.com/id/1770690446/photo/smiling-schoolgirl-during-class-in-computer-lab.webp?a=1&b=1&s=612x612&w=0&k=20&c=FdKRR0vyGqZLZc7N4WeJ1inKVqhlaqmX9dQbgKrAq3E=" // Replace with your image
+              image: "/expensive_tutorial.jpeg" // Replace with your image
             },
             {
               icon: "📱",
               title: "Poor Internet / No Laptop",
               desc: "Most students only have basic Android phones with limited data",
-              image: "https://images.unsplash.com/photo-1632215861513-130b66fe97f4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFBvb3IlMjBJbnRlcm5ldCUyMGluJTIwbmlnZXJpYSUyMHNlY29uZGFyeSUyMHNjaG9vbCUyMHN0dWRlbnRzfGVufDB8fDB8fHww"
+              image: "/poor_internet.jpeg"
             },
             {
               icon: "🎮",
               title: "Distractions & No Habit",
               desc: "Social media wins over static PDFs and random YouTube videos",
-              image: "https://images.unsplash.com/photo-1694878982234-58d53e0d1655?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8RGlzdHJhY3Rpb25zJTIwJTI2JTIwTm8lMjBIYWJpdCUyMFNvY2lhbCUyMG1lZGlhJTIwd2lucyUyMG92ZXIlMjBzdGF0aWMlMjBQREZzJTIwYW5kJTIwcmFuZG9tJTIwWW91VHViZSUyMHZpZGVvc3xlbnwwfHwwfHx8MA%3D%3D"
+              image: "/social_media_addiction.jpeg"
             },
           ].map((item, index) => (
             <motion.div 
