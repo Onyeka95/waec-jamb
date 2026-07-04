@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'WAEC/JAMB Practice Coach - Pass in One Sitting on WhatsApp',
   description: 'Daily gamified WAEC & JAMB practice on WhatsApp. No app download needed.',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/Pepzora_favicon2.jpg',
   },
 };
 

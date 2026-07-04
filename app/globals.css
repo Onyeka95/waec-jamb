@@ -3,14 +3,20 @@
 
 @layer base {
   :root {
+    --brand-primary: #195682;
+    --brand-primary-dark: #134566;
     --whatsapp-green: #25D366;
     --whatsapp-dark: #128C7E;
   }
 }
 
 @layer components {
-  .whatsapp-btn {
-    @apply bg-[#25D366] hover:bg-[#128C7E] text-white transition-all duration-300;
+  .brand-btn {
+    @apply bg-[#195682] hover:bg-[#134566] text-white transition-all duration-300;
+  }
+
+  .whatsapp-chip {
+    @apply bg-[#25D366] text-white;
   }
 }
 /* Mobile Overlap Fixes */
