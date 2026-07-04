@@ -56,6 +56,7 @@ const legalLinks = [
   { label: 'Terms of Service', href: '/terms' },
   { label: 'Privacy Policy', href: '/privacy' },
   { label: 'Refund Policy', href: '/refund-policy' },
+  { label: 'Data Deletion', href: '/data-deletion' },
 ];
 
 export default function Footer() {
