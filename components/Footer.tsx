@@ -50,6 +50,7 @@ const quickLinks = [
   { label: 'Gamification', href: '#gamification' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'For Schools', href: '#schools' },
+  { label: 'Teacher/Affiliate Form', href: 'https://forms.gle/jHwBZprsAnFbYQJk6' },
 ];
 
 const legalLinks = [
@@ -145,6 +146,12 @@ export default function Footer() {
                 <Phone className="w-4 h-4 shrink-0" />
                 <a href="tel:+2348069036428" className="hover:text-white transition-colors">
                   +234 806 903 6428
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-white/80">
+                <Mail className="w-4 h-4 shrink-0" />
+                <a href="https://forms.gle/6JzKj9nuoUVwTrnb9" className="hover:text-white transition-colors">
+                  Feedback Form
                 </a>
               </li>
             </ul>

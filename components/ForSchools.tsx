@@ -75,12 +75,12 @@ export default function ForSchools() {
 
         <div className="text-center mt-10 sm:mt-12">
           <a
-            href="https://wa.me/2348069036428?text=Hi%20Coach%2C%20I%27m%20a%20teacher%2Fschool%20owner%20and%20I%20want%20a%20demo"
+            href="https://forms.gle/jHwBZprsAnFbYQJk6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-[#195682] text-white px-8 sm:px-10 py-4 rounded-3xl font-semibold hover:bg-[#134566] transition-all"
           >
-            Request School Demo / Bulk Pricing
+            Teacher / Affiliate Registration Form
           </a>
         </div>
       </div>
