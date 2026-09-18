@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, Target } from 'lucide-react';
+import { Mail, Phone, Users, Target } from 'lucide-react';
 
 // lucide-react dropped brand/logo icons (trademark reasons), so socials are inline SVGs
 function FacebookIcon({ className }: { className?: string }) {
@@ -138,7 +138,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-white/80">
                 <Mail className="w-4 h-4 shrink-0" />
-                <a href="mailto:hello@prepzora.com" className="hover:text-white transition-colors">
+                <a href="mailto:hello@prepzora.com" className="hover:text-white transition-colors" target="_blank">
                   hello@prepzora.com
                 </a>
               </li>
@@ -149,8 +149,14 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex items-center gap-2 text-white/80">
+                <Users className="w-4 h-4 shrink-0" />
+                <a href="https://chat.whatsapp.com/Hx93oD2ZmbrAJ7DowEQDpd" className="hover:text-white transition-colors" target="_blank">
+                  Join our commuinity
+                </a>
+              </li>
+              <li className="flex items-center gap-2 text-white/80">
                 <Mail className="w-4 h-4 shrink-0" />
-                <a href="https://forms.gle/6JzKj9nuoUVwTrnb9" className="hover:text-white transition-colors">
+                <a href="https://forms.gle/6JzKj9nuoUVwTrnb9" className="hover:text-white transition-colors" target="_blank">
                   Feedback Form
                 </a>
               </li>

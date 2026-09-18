@@ -19,7 +19,7 @@ export default function HowItWorks() {
 
         <div className="grid md:grid-cols-4 gap-8">
           {[
-            { icon: MessageCircle, title: "1. Message the Bot", desc: "Say 'Hi' on WhatsApp", color: "bg-[#25D366]" },
+            { icon: MessageCircle, title: "1. Message the Bot", desc: "Say 'Menu' on WhatsApp", color: "bg-[#25D366]" },
             { icon: List, title: "2. Choose Subject", desc: "English, Maths, Biology, etc.", color: "bg-blue-500" },
             { icon: Play, title: "3. Answer Questions", desc: "Get instant feedback + explanation", color: "bg-purple-500" },
             { icon: Award, title: "4. Build Streaks & Win", desc: "Earn XP, badges & climb leaderboard", color: "bg-orange-500" },

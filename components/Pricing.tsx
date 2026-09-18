@@ -19,7 +19,7 @@ export default function Pricing({ whatsappLink }: { whatsappLink: string }) {
             <p className="text-4xl sm:text-5xl font-bold mt-4">₦0</p>
             <ul className="mt-8 space-y-4 text-left">
               <li className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-[#195682] shrink-0" /> 5 questions daily
+                <Check className="w-5 h-5 text-[#195682] shrink-0" /> 10 questions daily
               </li>
               <li className="flex items-center gap-3">
                 <Check className="w-5 h-5 text-[#195682] shrink-0" /> One subject at a time
