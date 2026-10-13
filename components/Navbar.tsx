@@ -1,24 +1,26 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Menu, X, Phone } from 'lucide-react';
 
 export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '#how', label: 'How it Works' },
-    { href: '#features', label: 'Features' },
-    { href: '#gamification', label: 'Gamification' },
-    { href: '#pricing', label: 'Pricing' },
-    { href: '#schools', label: 'For Schools' },
+    { href: '/#how', label: 'How it Works' },
+    { href: '/#features', label: 'Features' },
+    { href: '/#pricing', label: 'Pricing' },
+    { href: '/#schools', label: 'For Schools' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/gallery', label: 'Gallery' },
   ];
 
   return (
     <nav className="sticky top-0 bg-white border-b border-gray-100 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
         {/* Logo + Name */}
-        <a href="#" className="flex items-center gap-2 sm:gap-3 shrink-0">
+        <Link href="/" className="flex items-center gap-2 sm:gap-3 shrink-0">
           <Image
             src="/Pepzora_logo.png"
             alt="Prepzora logo"
@@ -30,18 +32,18 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
           <span className="font-bold text-xl sm:text-2xl tracking-tight text-[#195682]">
             Prepzora
           </span>
-        </a>
+        </Link>
 
         {/* Desktop links */}
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+        <div className="hidden lg:flex items-center gap-7 text-sm font-medium text-gray-700">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="hover:text-[#195682] transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
@@ -50,7 +52,7 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:flex items-center gap-2 bg-[#195682] hover:bg-[#134566] text-white px-6 py-3 rounded-3xl font-semibold transition-colors"
+          className="hidden lg:flex items-center gap-2 bg-[#195682] hover:bg-[#134566] text-white px-6 py-3 rounded-3xl font-semibold transition-colors"
         >
           <Phone className="w-5 h-5" />
           Start Free Practice
@@ -58,7 +60,7 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-[#195682]"
+          className="lg:hidden text-[#195682]"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileMenuOpen}
@@ -69,16 +71,16 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-6 space-y-1">
+        <div className="lg:hidden bg-white border-t border-gray-100 px-6 py-6 space-y-1">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               className="block py-3 text-gray-700 hover:text-[#195682] font-medium"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href={whatsappLink}
