@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X, Phone } from 'lucide-react';
+import TrackedLink from '@/components/TrackedLink';
 
 export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -48,15 +49,15 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
         </div>
 
         {/* Desktop CTA */}
-        <a
+        <TrackedLink
           href={whatsappLink}
-          target="_blank"
-          rel="noopener noreferrer"
+          event="join_whatsapp_click"
+          location="navbar_desktop"
           className="hidden lg:flex items-center gap-2 bg-[#195682] hover:bg-[#134566] text-white px-6 py-3 rounded-3xl font-semibold transition-colors"
         >
           <Phone className="w-5 h-5" />
           Start Free Practice
-        </a>
+        </TrackedLink>
 
         {/* Mobile toggle */}
         <button
@@ -82,15 +83,15 @@ export default function Navbar({ whatsappLink }: { whatsappLink: string }) {
               {link.label}
             </Link>
           ))}
-          <a
+          <TrackedLink
             href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
+            event="join_whatsapp_click"
+            location="navbar_mobile"
             className="flex items-center justify-center gap-2 bg-[#195682] text-white text-center py-4 rounded-3xl font-semibold mt-4"
           >
             <Phone className="w-5 h-5" />
             Start Free Practice
-          </a>
+          </TrackedLink>
         </div>
       )}
     </nav>

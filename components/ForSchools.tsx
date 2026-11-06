@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { Users, Award, BarChart3 } from 'lucide-react';
 import Image from 'next/image';
+import TrackedLink from '@/components/TrackedLink';
 
 export default function ForSchools() {
   const cards = [
@@ -9,7 +10,7 @@ export default function ForSchools() {
       icon: Users,
       title: 'Bulk Student Access',
       desc: 'One coupon code for entire class or school',
-      image: '/bulk_student_access.jpg',
+      image: '/blog/say-yes-campaign/sayyes3.jpeg',
     },
     {
       icon: BarChart3,
@@ -21,7 +22,7 @@ export default function ForSchools() {
       icon: Award,
       title: 'School Leaderboard',
       desc: 'Motivate students with healthy competition',
-      image: '/student_celebrate.jpg',
+      image: '/blog/say-yes-campaign/sayyes20.jpeg',
     },
   ];
 
@@ -74,14 +75,14 @@ export default function ForSchools() {
         </div>
 
         <div className="text-center mt-10 sm:mt-12">
-          <a
+          <TrackedLink
             href="https://forms.gle/jHwBZprsAnFbYQJk6"
-            target="_blank"
-            rel="noopener noreferrer"
+            event="teacher_form_click"
+            location="teachers_section"
             className="inline-flex items-center gap-3 bg-[#195682] text-white px-8 sm:px-10 py-4 rounded-3xl font-semibold hover:bg-[#134566] transition-all"
           >
             Teacher / Affiliate Registration Form
-          </a>
+          </TrackedLink>
         </div>
       </div>
     </section>

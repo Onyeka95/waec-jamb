@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
+import { trackEvent } from '@/lib/analytics';
 
 export default function FinalCTA({ whatsappLink }: { whatsappLink: string }) {
   return (
@@ -23,6 +24,9 @@ export default function FinalCTA({ whatsappLink }: { whatsappLink: string }) {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() =>
+              trackEvent('join_whatsapp_click', { location: 'footer_cta' })
+            }
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             className="mt-8 sm:mt-10 inline-flex items-center gap-3 sm:gap-4 bg-white text-[#195682] px-8 sm:px-12 py-5 sm:py-6 rounded-3xl text-lg sm:text-2xl font-bold shadow-xl hover:shadow-2xl transition-all w-full sm:w-auto justify-center"

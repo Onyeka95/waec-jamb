@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Check } from 'lucide-react';
+import TrackedLink from '@/components/TrackedLink';
 
 export default function Pricing({ whatsappLink }: { whatsappLink: string }) {
   return (
@@ -28,14 +29,15 @@ export default function Pricing({ whatsappLink }: { whatsappLink: string }) {
                 <Check className="w-5 h-5 text-[#195682] shrink-0" /> Basic streak tracking
               </li>
             </ul>
-            <a
+            <TrackedLink
               href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              event="join_whatsapp_click"
+              location="pricing_free"
+              plan="free"
               className="mt-10 block w-full py-4 border-2 border-[#195682] text-[#195682] rounded-3xl font-semibold hover:bg-[#195682] hover:text-white transition-all"
             >
               Start Free Now
-            </a>
+            </TrackedLink>
           </motion.div>
 
           {/* Paid Tier */}
@@ -66,14 +68,15 @@ export default function Pricing({ whatsappLink }: { whatsappLink: string }) {
               </li>
             </ul>
 
-            <a
+            <TrackedLink
               href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              event="join_whatsapp_click"
+              location="pricing_paid"
+              plan="full_access"
               className="mt-10 block w-full py-4 bg-white text-[#195682] rounded-3xl font-semibold hover:bg-gray-100 transition-all"
             >
               Subscribe on WhatsApp
-            </a>
+            </TrackedLink>
           </motion.div>
         </div>
       </div>

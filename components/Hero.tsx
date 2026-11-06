@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { Phone, Flame } from 'lucide-react';
 import Image from 'next/image';
+import TrackedLink from '@/components/TrackedLink';
 
 export default function Hero({ whatsappLink }: { whatsappLink: string }) {
   return (
@@ -20,14 +21,14 @@ export default function Hero({ whatsappLink }: { whatsappLink: string }) {
           </p>
 
           <div className="mt-8 sm:mt-10 flex flex-wrap gap-4">
-            <a
+            <TrackedLink
               href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              event="join_whatsapp_click"
+              location="hero"
               className="w-full sm:w-auto bg-[#195682] hover:bg-[#134566] text-white px-8 sm:px-10 py-4 sm:py-5 rounded-3xl text-lg sm:text-xl font-semibold flex items-center justify-center gap-3 hover:scale-105 transition-all"
             >
               <Phone className="w-6 h-6" /> Chat with Coach Now – Free
-            </a>
+            </TrackedLink>
           </div>
 
           <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-6 sm:gap-8 text-sm">
